@@ -68,7 +68,7 @@ app.use(mongoSanitize());
 
 //Data sanitization against XSS
 // it trans html code to another characters
-app.use(xssClean());
+// app.use(xssClean());
 
 // Prevent parameter pollution
 // app.use(

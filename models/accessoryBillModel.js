@@ -8,7 +8,7 @@ const accessoryBillSchema = new mongoose.Schema(
                 _id: false,
                 itemId: { type: mongoose.Schema.Types.ObjectId, ref: 'Accessory' },
                 quantity: { type: Number, required: [true, 'Accessory must have amount'] },
-                color: { type: String, required: [true, 'Accessory must have color'] },
+                color: { type: String, required: [false, 'Accessory must have color'] },
             },
         ],
         totalPrice: {
